@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "darkcows-mobswitch",
+	"version": "${version}",
+	"name": "MobSwitch",
+	"description": "/mobswitch [toggle, on, off] use mobswitch. Also increases global mob cap.",
+	"authors": [
+		"DarkCows"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/template-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.darkcows.mobswitch.MobSwitch"
+		]
+	},
+	"mixins": [
+		"mobswitch.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
